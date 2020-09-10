@@ -1,3 +1,9 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap";
+
+:root {
+    --color-green: #50fa7b;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -6,22 +12,61 @@
 body {
     background: #282a36;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 header {
-    padding: 30px;
-    border-bottom: 1px solid olive ;
+    padding: 32px;
+    border-bottom: 1px solid var(--color-green) ;
     background-color: rgba(0, 0, 0, 0, 0.75);
 }
-header div {
+.links {
     text-align: center;
 }
-header div a {
-    padding: 0 30px;
+.links a {
     color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
     text-decoration: none;
-    font-size: 21px;
 }
-header div a:hover {
-    color: olivedrab;
+.links a:hover {
+    color: var(--color-green);
     transition: color 300ms;
+}
+
+#content {
+    text-align: center;
+    padding: 32px;
+}
+
+#content img {
+    border-radius: 50%;
+    height: 350px;
+    border: 2px solid var(--color-green);
+    margin-bottom: 32px;
+}
+
+#content h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+}
+
+#content p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+#content ul {
+    list-style-position: inside;
+}
+
+#content ul li {
+    margin: 12px;
+
+}
+
+#links-footer a {
+    border-bottom: 1px solid var(--color-green);
 }
